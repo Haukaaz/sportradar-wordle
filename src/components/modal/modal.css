@@ -1,0 +1,54 @@
+/* Modal */
+.modal {
+  background: rgba(8, 8, 8, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.modal .modal-container {
+  max-width: 480px;
+  background: #121213;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 10% auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal-container p {
+  font-size: 16px;
+}
+
+.modal .solution {
+  color: #00bf63;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal .red {
+  color: #ff3131;
+}
+
+.modal span {
+  color: #fff;
+  font-weight: 500;
+  text-transform: none;
+  margin-right: 10px;
+}
+
+.play-again-btn {
+  width: 120px;
+}
+
+@media (max-width: 600px) {
+  .modal .modal-container {
+    padding: 20px 10px;
+    margin-top: 20%;
+    max-width: 350px;
+  }
+}

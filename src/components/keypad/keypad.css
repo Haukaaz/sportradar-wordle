@@ -1,0 +1,42 @@
+/* keypad */
+.keypad {
+  max-width: 500px;
+  margin: 20px auto;
+  color: #fff;
+  font-weight: 900;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.keypad > div {
+  margin: 5px;
+  width: 45px;
+  height: 50px;
+  background: #818384;
+  display: inline-block;
+  border-radius: 6px;
+  line-height: 50px;
+}
+
+.keypad > div.green {
+  background: #00bf63;
+  transition: all 0.3s ease-in;
+}
+
+.keypad > div.yellow {
+  background: #ffb000;
+  transition: all 0.3s ease-in;
+}
+
+.keypad > div.grey {
+  background: #3a3a3c;
+  transition: all 0.3s ease-in;
+}
+
+/* ----- media query ----- */
+
+@media (max-width: 600px) {
+  .keypad > div {
+    width: 30px;
+  }
+}
