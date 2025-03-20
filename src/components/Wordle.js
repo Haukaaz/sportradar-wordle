@@ -18,13 +18,13 @@ export default function Wordle({ solution }) {
     // Condition 1: If user guesses the word correctly, win
     if (isCorrect) {
       setTimeout(() => setShowModal(true), 2000);
-      window.removeEventListener("keyup", handleKeyUp); // prevents the user from guessing more after win
+      window.removeEventListener("keyup", handleKeyUp);
     }
 
     // Condition 2: When the turns are over 5, loss
     if (turn > 4) {
       setTimeout(() => setShowModal(true), 2000);
-      window.removeEventListener("keyup", handleKeyUp); // prevents the user from guessing more after no more turns
+      window.removeEventListener("keyup", handleKeyUp);
     }
 
     return () => window.removeEventListener("keyup", handleKeyUp);

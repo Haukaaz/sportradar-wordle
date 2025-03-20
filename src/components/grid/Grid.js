@@ -8,7 +8,7 @@ export default function Grid({ currentGuess, pastGuesses, turn }) {
         if (turn === i) {
           return <Row key={i} currentGuess={currentGuess} />;
         }
-        return <Row key={i} pastGuess={g} />; // g is for pastGuess, i is for index
+        return <Row key={i} pastGuess={g} />;
       })}
     </div>
   );
